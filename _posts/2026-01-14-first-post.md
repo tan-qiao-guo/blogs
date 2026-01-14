@@ -1,10 +1,12 @@
 ---
-title: "2026-01-14-中国地图简单代码"
+title: "中国地图简单代码"
 date: 2026-01-14
-categories: [R代码]
-tags: [notes]
+categories: [R]
+tags: [cnmap, ggplot2]
 layout: single
 ---
+
+下面是最简代码：
 
 ```r
 library(cnmap)
@@ -15,7 +17,7 @@ getMap(subRegion = TRUE) %>%
   geom_sf() +
   theme_minimal()
 
-```
+
 
 
 [查看完整报告]({{ "/reports/2026-01-14-中国地图.html" | relative_url }})
