@@ -6,7 +6,16 @@ tags: [notes]
 layout: single
 ---
 
+```r
+library(cnmap)
+library(tidyverse)
+
+getMap(subRegion = TRUE) %>%
+  ggplot() +
+  geom_sf() +
+  theme_minimal()
 
 
 
-[查看完整 R 分析报告]({{ "/reports/2026-01-14-中国地图.html" | relative_url }})
+
+[查看完整报告]({{ "/reports/2026-01-14-中国地图.html" | relative_url }})
