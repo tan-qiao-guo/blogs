@@ -16,7 +16,7 @@ getMap(subRegion = TRUE) %>%
   ggplot() +
   geom_sf() +
   theme_minimal()
-
+```
 
 
 
