@@ -15,7 +15,7 @@ getMap(subRegion = TRUE) %>%
   geom_sf() +
   theme_minimal()
 
-
+```
 
 
 [查看完整报告]({{ "/reports/2026-01-14-中国地图.html" | relative_url }})
