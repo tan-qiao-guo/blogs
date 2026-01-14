@@ -1,0 +1,25 @@
+---
+title: "中国地图"
+format: html
+editor: visual
+---
+
+
+## R Markdown
+
+```{r echo=FALSE}
+Sys.unsetenv(c("https_proxy","http_proxy","HTTP_PROXY","HTTPS_PROXY"))
+```
+
+```{r message=FALSE}
+library(cnmap) #install.packages("cnmap")
+library(tidyverse)
+
+
+getMap(subRegion = T) %>% 
+  ggplot()+
+  theme_minimal()+
+  geom_sf()
+
+```
+
